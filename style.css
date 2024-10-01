@@ -1,0 +1,367 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inter", sans-serif;
+  width: 100%;
+  background-color: rgba(15, 23, 36, 1);
+  color: white;
+}
+button:hover {
+  cursor: pointer;
+}
+/* -------------design header--------- */
+header {
+  width: 100%;
+  height: 4vw;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+header > nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 63.4vw;
+  padding: 0vw 1vw;
+}
+nav > h3 {
+  font-size: 1.56vw;
+}
+#pages {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  gap: 1.5vw;
+}
+#pages > a {
+  font-size: 1.09vw;
+  text-decoration: none;
+  color: white;
+}
+#pages > a:hover {
+  padding-bottom: 0.1vw;
+  border-bottom: 0.2vw solid rgb(13, 178, 223);
+}
+#Soical_icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.4vw;
+}
+#Soical_icon > img {
+  width: 1.4vw;
+}
+.h_C:hover {
+  cursor: pointer;
+  border: 0.2vw solid rgba(146, 104, 225, 1);
+  border-radius: 1.3vw;
+  width: 3.9vw;
+}
+.h_Cln:hover {
+  cursor: pointer;
+  padding-bottom: 0.1vw;
+  border-bottom: 0.2vw solid rgba(146, 104, 225, 1);
+}
+/* -----------design hero section------------ */
+#hero_section {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin: 1vw 19.14vw 1vw 19.14vw;
+  padding: 3.91vw 0 0 0;
+}
+#hero_section > h2 {
+  font-size: 2.5vw;
+}
+#contanier {
+  display: flex;
+}
+#right_content {
+  width: 50%;
+  /* border: 3px solid white; */
+  position: relative;
+}
+#right_content > img {
+  position: absolute;
+  transform: translate(-29%, -1%);
+  z-index: -10;
+  width: 40vw;
+}
+#left_content {
+  padding: 8vw 0;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+}
+#left_content > h1 {
+  font-size: 3.4vw;
+}
+.Txt_bg_color {
+  background-image: linear-gradient(
+    to right,
+    rgba(146, 104, 225, 1),
+    rgba(13, 178, 223, 1)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+p {
+  font-size: 1.02vw;
+}
+#left_content > button {
+  color: white;
+  border: 0px solid white;
+  border-radius: 3vw;
+  width: 11.48vw;
+  padding: 1.06vw 1vw;
+  font-size: 1.02vw;
+  font-weight: bold;
+  /* --------bg-gradient------ */
+  background-image: linear-gradient(
+    to right,
+    rgba(146, 104, 225, 1),
+    rgba(13, 178, 223, 1)
+  );
+}
+/* -----------Project section Design------------ */
+#cards {
+  margin: 1vw 19.14vw 8vw 19.14vw;
+  padding: 3.91vw 0 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1vw;
+  justify-content: center;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  /* gap: 2vw; */
+  width: 29vw;
+  height: 35vw;
+  color: white;
+  overflow: hidden;
+  border-radius: 1vw; /* Make it a circle */
+  border: 0.2vw solid transparent; /* Set initial transparent border */
+  border-image: linear-gradient(
+      to right,
+      rgba(146, 104, 225, 1),
+      rgba(13, 178, 223, 1)
+    )
+    1; /* Apply linear gradient as border */
+  padding: 1.5vw;
+}
+.card > img {
+  width: 100%;
+}
+.card-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+  margin-top: -3vw;
+}
+.card-text > h2 {
+  font-size: 1.8vw;
+}
+.card-text > p {
+  font-size: 1.1vw;
+}
+.card-btn > button:nth-child(1) {
+  color: white;
+  border: 0px solid white;
+  border-radius: 3vw;
+  width: 11vw;
+  padding: 1.3vw 0.1vw;
+  font-size: 1.3vw;
+  font-weight: bold;
+  /* --------bg-gradient------ */
+  background-image: linear-gradient(
+    to right,
+    rgba(146, 104, 225, 1),
+    rgba(13, 178, 223, 1)
+  );
+}
+.card-btn > button:nth-child(2) {
+  color: white;
+  border: 0.2vw solid white;
+  border-radius: 3vw;
+  width: 13vw;
+  padding: 1.2vw 0.7vw;
+  font-size: 1.3vw;
+  font-weight: bold;
+  background-color: inherit;
+}
+.card-btn {
+  display: flex;
+  gap: 0.5vw;
+}
+/* -----------Technologies Section Design------------ */
+#Technologies {
+  margin-top: 14vw;
+  color: white;
+  margin: 1vw 19.14vw 1vw 19.14vw;
+  /* padding: 3.91vw 0.3vw 0.2vw 0.2vw; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2vw;
+}
+#Technologies > h2 {
+  font-size: 2.5vw;
+}
+.skills {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5vw;
+}
+.progress_bar {
+  display: flex;
+  gap: 2vw;
+  justify-content: center;
+  padding: 0.5vw;
+}
+.Skill_L {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2vw;
+}
+.progress-bar {
+  /* <!-- -------you change the value of width according to progress bar full size (Max.Min)-- --> */
+  /* width: 100%; */
+  height: 1vw;
+  background-color: #ddd;
+  border-radius: 10vw;
+  overflow: hidden;
+}
+.progress-fill {
+  /* width: 100%; */
+  /* <!-- -------you change the value of width according to progress bar value-- --> */
+  height: 100%;
+  background: linear-gradient(
+    80deg,
+    rgba(146, 104, 225, 2),
+    rgba(13, 178, 223, 1)
+  );
+  border-radius: 10vw;
+  transition: width 0.5s ease-in-out;
+}
+.Skill_L > h3 {
+  font-size: 1.2vw;
+}
+.Skill_R {
+  width: 10%;
+  display: flex;
+  align-items: baseline;
+  justify-content: right;
+}
+.Skill_R > h5 {
+  font-size: 0.8vw;
+}
+/* -----------Additional Technologies & Skill Section Design------------ */
+#A_tech {
+  margin-top: 14vw;
+  color: white;
+  margin: 8vw 19.14vw 0vw 19.14vw;
+  /* padding: 3.91vw 0.3vw 0.2vw 0.2vw; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3vw;
+}
+#A_tech > h1 {
+  font-size: 2.5vw;
+}
+.Clm_Skills {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6vw;
+}
+.A_Skills {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+.A_Skill {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 1vw;
+}
+ h4 {
+  font-size: 1vw;
+}
+.C_Bullet {
+  width: 1.5vw;
+  height: 1.5vw;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: rebeccapurple;
+  background: linear-gradient(
+    115deg,
+    rgba(146, 104, 225, 2),
+    rgba(13, 178, 223, 1)
+  );
+}
+#About_me {
+  margin-top: 14vw;
+  color: white;
+  margin: 2vw 19.14vw 1vw 19.14vw;
+  /* padding: 3.91vw 0.3vw 0.2vw 0.2vw; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2vw;
+}
+.About_con {
+  display: flex;
+}
+.About_clr {
+  width: 1vw;
+  height: 1vw;
+}
+h1 {
+  font-size: 2.5vw;
+}
+.clm {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+}
+.clm > h3 {
+  font-size: 1vw;
+}
+.bg_line {
+  background-color: white;
+  height: 0.3vw;
+  width: 100%;
+  top: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#About_content {
+  font-size: 1.1vw;
+  padding: 0 1vw 1vw 0vw;
+}
+footer {
+  margin-top: 14vw;
+  color: white;
+  margin: 2vw 19.14vw 1vw 19.14vw;
+  padding: 3.91vw 0.3vw 1vw 0.2vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2vw;
+}
+
